@@ -1,6 +1,6 @@
 {
   "name": "@sharathvc/sm-decision-inspector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Human-in-the-loop workbench for AAE decision envelopes — React/TypeScript renderer for operator approve/deny gestures, M-of-N countersignature quorum, and signer roster surfaces in audited HITL flows. Aligned with Project NANDA's Attestation pillar.",
   "license": "MIT",
   "author": "Sharath VC",

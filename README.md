@@ -131,6 +131,7 @@ The decision-envelope wire format, quorum semantics, and rendering rules used by
 | Package | Role |
 |---|---|
 | [`sm-locp`](https://github.com/Sharathvc23/sm-locp) | Open Compliance Protocol — defeasible-logic engine + W3C VC issuance. **Produces AAEs.** |
+| [`sm-airlock`](https://github.com/Sharathvc23/sm-airlock) | Allowlist-gated plugin sandbox — denies plugin attribute access by default, per-method rate limits, Ed25519-signed plugin manifests. |
 | [`sm-enclave`](https://github.com/Sharathvc23/sm-enclave) | Speculative execution sandbox; stages side effects before decision commit. |
 
 ### Federation
