@@ -1,0 +1,43 @@
+{
+  "v": 1,
+  "id": "01HXEZ0EXAMPLEDECISION2OF3",
+  "ts": "2026-05-20T08:14:33.000Z",
+  "tenant": "acme-corp",
+  "actor": {
+    "namespace": "ops",
+    "value": "approver-alice",
+    "did": "did:example:ops/approver-alice",
+    "display_name": "Alice Approver"
+  },
+  "topic": "tenants/acme-corp/decisions/proposals",
+  "type": "decision",
+  "classification": "confidential",
+  "payload": {
+    "subject": {
+      "namespace": "ops",
+      "value": "approver-alice",
+      "did": "did:example:ops/approver-alice"
+    },
+    "kind": "operator_authorize",
+    "annotation": "Awaiting third co-signer to reach 3-of-3 quorum policy.",
+    "recorded_at": "2026-05-20T08:14:33.000Z",
+    "proofs": [
+      {
+        "type": "Ed25519Signature2020",
+        "verificationMethod": "did:example:ops/approver-alice#key-1",
+        "created": "2026-05-20T08:14:33.100Z",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "z58DAdFfa9SkqZMVPxAQp1RaY4eHnLPxL2NHCpHFRq9rPwExample2of3Alice=="
+      },
+      {
+        "type": "Ed25519Signature2020",
+        "verificationMethod": "did:example:ops/approver-bob#key-1",
+        "created": "2026-05-20T08:14:48.200Z",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "z58DAdFfa9SkqZMVPxAQp1RaY4eHnLPxL2NHCpHFRq9rPwExample2of3Bob=="
+      }
+    ]
+  },
+  "lifecycle": "proposed",
+  "trace_id": "trace-01HXEZ0FEXAMPLE002"
+}

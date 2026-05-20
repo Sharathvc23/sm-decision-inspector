@@ -1,0 +1,38 @@
+{
+  "v": 1,
+  "id": "01HXEZ0EXAMPLEDECISION1OF1",
+  "ts": "2026-05-20T08:12:11.000Z",
+  "tenant": "acme-corp",
+  "actor": {
+    "namespace": "ops",
+    "value": "approver-alice",
+    "did": "did:example:ops/approver-alice",
+    "display_name": "Alice Approver"
+  },
+  "topic": "tenants/acme-corp/decisions/proposals",
+  "type": "decision",
+  "classification": "restricted",
+  "payload": {
+    "subject": {
+      "namespace": "ops",
+      "value": "approver-alice",
+      "did": "did:example:ops/approver-alice"
+    },
+    "kind": "operator_authorize",
+    "annotation": "Single-signer approval — standard low-risk operation.",
+    "recorded_at": "2026-05-20T08:12:11.000Z",
+    "proofs": [
+      {
+        "type": "Ed25519Signature2020",
+        "verificationMethod": "did:example:ops/approver-alice#key-1",
+        "created": "2026-05-20T08:12:11.100Z",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "z58DAdFfa9SkqZMVPxAQp1RaY4eHnLPxL2NHCpHFRq9rPwExample1of1Fixture=="
+      }
+    ]
+  },
+  "lifecycle": "committed",
+  "evidence_ref": "evidence://ledger/acme-corp/seq/72115",
+  "trace_id": "trace-01HXEZ0FEXAMPLE001",
+  "predecessor_hash": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+}
